@@ -1,6 +1,6 @@
 # StudentSoupApp
 
-> StudentSoup(웹) 기반 앱 제작 프로젝트
+> [StudentSoup](https://github.com/TeamDogeC-2/StudentSoup) 기반 앱 제작 프로젝트
 
 ## 설치 방법(MAC OS):
 
