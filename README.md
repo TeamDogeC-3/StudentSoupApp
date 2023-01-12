@@ -154,3 +154,5 @@ npm install
 
 - 23-01-11
   - 안드로이드 시뮬레이터로 실행시 환경 변수설정 안내 없음.
+- 23-01-12
+  - react-native-sass-transformer 를 사용할 것인가?
