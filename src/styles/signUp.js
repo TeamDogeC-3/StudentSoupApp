@@ -59,7 +59,4 @@ export const signUpStyles = StyleSheet.create({
         alignItems:'center', 
         paddingVertical:vh/400
     },
-    text_input: {
-
-    },
 });

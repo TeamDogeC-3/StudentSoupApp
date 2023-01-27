@@ -32,5 +32,15 @@ export const globalStyles = StyleSheet.create({
         fontSize: 15,
         color: Colors.white,
         textAlign:'center',
-    }
+    },
+    text_input: {
+        borderColor: Colors.light_grey,
+        width: '100%',
+        borderWidth: 1,
+        borderRadius: 2.5,
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        fontWeight: '600',
+        marginVertical: vh/200,
+    },
 });
