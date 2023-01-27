@@ -10,9 +10,9 @@ import { Dimensions } from 'react-native'
 const vw = Dimensions.get('window').width;
 const vh = Dimensions.get('window').height;
 
-export const OrangeButton = ({text}) => {
+export const OrangeButton = ({text,able}) => {
     return (
-        <TouchableOpacity style={{backgroundColor:Colors.orange, height:vh/15, justifyContent:'center'}}>
+        <TouchableOpacity style={{ backgroundColor: able?Colors.orange:Colors.grey, height:vh/15, justifyContent:'center'}}>
             <Text style={globalStyles.nextButton}>{text}</Text>
         </TouchableOpacity>
     );

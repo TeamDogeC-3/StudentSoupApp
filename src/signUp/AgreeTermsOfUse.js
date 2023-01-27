@@ -95,7 +95,8 @@ const AgreeTermsOfUse = () => {
 
                 <View style={{height:vh/15}}/>
                 
-                <OrangeButton text="동의하고 가입하기"></OrangeButton> 
+                {/* todo : Agree[0][1]이 활성화되어있다면 able에 true를 */}
+                <OrangeButton text="동의하고 가입하기" able={true}></OrangeButton> 
 
             </View>
 
