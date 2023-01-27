@@ -49,10 +49,17 @@ export const signUpStyles = StyleSheet.create({
         textAlign:'center', 
         textAlignVertical:'center', 
     },
+    context: {
+        height: vh*0.4,
+        flexDirection:'column',
+        justifyContent:'space-between'
+    },
     agree: {
         flexDirection:'row', 
         alignItems:'center', 
         paddingVertical:vh/400
-    }
-    
+    },
+    text_input: {
+
+    },
 });
