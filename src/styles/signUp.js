@@ -49,8 +49,10 @@ export const signUpStyles = StyleSheet.create({
         textAlign:'center', 
         textAlignVertical:'center', 
     },
-    subtitle: {
-        
+    agree: {
+        flexDirection:'row', 
+        alignItems:'center', 
+        paddingVertical:vh/400
     }
     
 });
