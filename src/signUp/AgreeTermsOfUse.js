@@ -78,14 +78,14 @@ const AgreeTermsOfUse = () => {
 
                     <View style={{height:vh/30}}/>
 
-                    {/* todo : AgreeAll을 활성화/비활성화하면 모든 Agree를 활성화/비활성화, Agree가 모두 활성화되어있다면 AgreeAll을 활성화, Agree가 하나라도 비활성화되어있다면 비활성화 */}
+                    {/* todo : agree배열을 생성, AgreeAll을 [0], Agree를 [1],[2],[3]으로 지정 */}
+                    {/* todo : [0]을 활성화/비활성화하면 [1],[2],[3]을 활성화/비활성화, [1][2][3]이 모두 활성화되어있다면 [0]을 활성화, 하나라도 비활성화되어있다면 비활성화 */}
                     <AgreeAll text="모든 약관에 동의합니다."></AgreeAll>
 
                     <View style={{height:vh/30}}/>
                     <View style={{height:2, backgroundColor:Colors.lightest_grey}}/>
                     <View style={{height:vh/200}}/>
                     
-                    {/* todo : 각 Agree 컴포넌트에 인덱스를 부여, AgreeAll을 활성화/비활성화하면 [0],[1],[2]를 활성화/비활성화, [0],[1],[2]가 활성화되어있다면 AgreeAll을 활성화 */}
                     <Agree text="[필수] 개인정보 수집 및 이용 동의"></Agree>
                     <Agree text="[필수] 개인정보 보유기간 및 이용기간"></Agree>
                     <Agree text="[선택] 광고성 정보 수신 및 마케팅 활용 동의"></Agree>
@@ -99,7 +99,7 @@ const AgreeTermsOfUse = () => {
 
                 </View>
                 
-                {/* todo : Agree[0][1]이 활성화되어있다면 able에 true를 */}
+                {/* todo : [1][2]가 활성화되어있다면 able에 true를 */}
                 <OrangeButton text="동의하고 가입하기" able={true}></OrangeButton> 
 
             </View>
