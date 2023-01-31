@@ -48,14 +48,14 @@ const InsertIDPW = () => {
 
                     {/* todo : TextInput마다 인덱스를 부여하여 배열에 텍스트를 집어넣는다, [0]:ID, [1]:PW, [2]:PWcheck */}
                     <Text style={globalStyles.basic}>ID</Text>
-                    <TextInput style={globalStyles.text_input} placeholderTextColor={Colors.grey} placeholder="아이디 입력"></TextInput>
+                    <TextInput style={globalStyles.textInput} placeholderTextColor={Colors.grey} placeholder="아이디 입력"></TextInput>
                     {/* todo : 기본값 false, '다음' 버튼을 눌렀을 때 아이디가 중복되었는지 확인하여 갱신 */}
                     <Ps text={"중복된 아이디입니다."} able={false}/>
 
                     <View style={{height:vh/200}}/>
 
                     <Text style={globalStyles.basic}>PW</Text>
-                    <TextInput style={globalStyles.text_input} placeholderTextColor={Colors.grey} placeholder="비밀번호 입력"></TextInput>
+                    <TextInput style={globalStyles.textInput} placeholderTextColor={Colors.grey} placeholder="비밀번호 입력"></TextInput>
                     <View style={{flexDirection:'row'}}>
                         {/* todo : 각 조건에 부합할 경우 갱신 */}
                         <Ps text={"대소문자 ✓"} able={true}/>
@@ -63,7 +63,7 @@ const InsertIDPW = () => {
                         <Ps text={"8-20자 이내 ✓"} able={true}/>
                     </View>
                     
-                    <TextInput style={globalStyles.text_input} placeholderTextColor={Colors.grey} placeholder="비밀번호 확인"></TextInput>
+                    <TextInput style={globalStyles.textInput} placeholderTextColor={Colors.grey} placeholder="비밀번호 확인"></TextInput>
                     {/* todo : [1]과 [2]가 같을 경우 able=true */}
                     <Ps text={"비밀번호 일치 ✓"} able={true}/>
                     {/* √ ✓ ✔ */}
