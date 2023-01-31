@@ -5,7 +5,7 @@ import { Dimensions } from 'react-native'
 const vw = Dimensions.get('window').width;
 const vh = Dimensions.get('window').height;
 
-export const signUpStyles = StyleSheet.create({
+export const registerStyles = StyleSheet.create({
     common: {
         height:vh*0.8,
         marginTop:vh/10, 
