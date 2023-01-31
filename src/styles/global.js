@@ -22,6 +22,11 @@ export const globalStyles = StyleSheet.create({
         fontSize: 13,
         color: Colors.black,
     },
+    basic_grey: {
+        fontWeight: '600',
+        fontSize: 13,
+        color: Colors.grey,
+    },
     ps: {
         fontWeight: '500',
         fontSize: 10,
@@ -33,14 +38,36 @@ export const globalStyles = StyleSheet.create({
         color: Colors.white,
         textAlign:'center',
     },
-    text_input: {
+    textInput: {
+        fontWeight: '600',
+        fontSize: 13,
         borderColor: Colors.light_grey,
-        width: '100%',
         borderWidth: 1,
         borderRadius: 2.5,
-        paddingVertical: 10,
-        paddingHorizontal: 20,
-        fontWeight: '600',
         marginVertical: vh/200,
+        backgroundColor: Colors.white,
+        width: '100%',
+        paddingHorizontal: vw/20,
     },
+    dropDownPicker: {
+        borderColor: Colors.light_grey,
+        borderWidth: 1,
+        borderRadius: 2.5,
+        paddingLeft: vw/20,
+        paddingRight: vw/40,
+        marginVertical: vh/200,
+        backgroundColor: Colors.white
+    },
+    dropDownContainer: {
+        borderColor: Colors.light_grey,
+        borderWidth: 1,
+        borderRadius: 2.5,
+        paddingLeft: vw/40,
+        backgroundColor: Colors.white
+    },
+    dropDownSearch: {
+        borderWidth: 0,
+        padding: 0,
+        margin: -10,
+    }
 });

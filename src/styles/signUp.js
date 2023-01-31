@@ -7,12 +7,13 @@ const vh = Dimensions.get('window').height;
 
 export const signUpStyles = StyleSheet.create({
     common: {
-        height: vh*0.8, 
+        height:vh*0.8,
         marginTop:vh/10, 
+        marginBottom:vh/10, 
         flex:1, 
         flexDirection:'column', 
         justifyContent:'space-between', 
-        marginHorizontal:vw/20
+        paddingHorizontal:vw/20
     },
     title: {
         paddingTop: vh/12, 
