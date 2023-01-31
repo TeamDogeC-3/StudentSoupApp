@@ -42,7 +42,7 @@ const InsertIDPW = () => {
 
                 <Subtitle text1="로그인에 사용될 아이디/비밀번호를" text2="입력해주세요."></Subtitle>
 
-                <View style={signUpStyles.context}>
+                <View style={registerStyles.context}>
 
                     <View style={{height:vh/30}}/>
 

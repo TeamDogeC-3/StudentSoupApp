@@ -7,9 +7,10 @@ import {
 
 import Colors from './src/styles/colors';
 
-import AgreeTermsOfUse from './src/signUp/AgreeTermsOfUse';
-import InsertIDPW from './src/signUp/InsertIDPW';
-import InsertPersonalData from './src/signUp/InsertPersonalData';
+import Login from './src/login/Login';
+import AgreeTermsOfUse from './src/register/AgreeTermsOfUse';
+import InsertIDPW from './src/register/InsertIDPW';
+import InsertPersonalData from './src/register/InsertPersonalData';
 
 const App = () => {
 
@@ -19,9 +20,10 @@ const App = () => {
         barStyle={'light-content'}
         backgroundColor={Colors.orange}
       />
+      <Login></Login>
       {/* <AgreeTermsOfUse></AgreeTermsOfUse> */}
       {/* <InsertIDPW></InsertIDPW> */}
-      <InsertPersonalData></InsertPersonalData>
+      {/* <InsertPersonalData></InsertPersonalData> */}
     </SafeAreaView>
   )
 };
