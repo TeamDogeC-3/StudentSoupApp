@@ -6,7 +6,7 @@ import {
   TextInput,
 } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
-// import RadioGroup from 'react-native-radio-buttons-group';
+import {RadioButton, Group} from 'react-native-paper';
 import {signUpStyles} from '../styles/signUp.js'
 import {globalStyles} from '../styles/global.js'
 import {Colors} from '../styles/colors.js';
@@ -18,14 +18,23 @@ import { Dimensions } from 'react-native'
 const vw = Dimensions.get('window').width;
 const vh = Dimensions.get('window').height;
 
-const Gender = function(){
+function Gender(){
+    const [value, setValue] = React.useState('male');
     return(
-        <View style={{flexDirection:'row'}}>
+        <View style={{flexDirection:'row', alignItems:'center'}}>
             <Text style={globalStyles.basic}>성별</Text>
+            <RadioButton.Group onValueChange={newValue => setValue(newValue)} value={value}>
+                <View style={{flexDirection:'row', alignItems:'center'}}>
+                    <Text style={[globalStyles.basic, {paddingLeft:vh/20}]}>남성</Text>
+                    <RadioButton value="male" color={Colors.orange} uncheckedColor={Colors.grey} />
+                    <Text style={[globalStyles.basic, {paddingLeft:vh/60}]}>여성</Text>
+                    <RadioButton value="female" color={Colors.orange} uncheckedColor={Colors.grey} />
+                </View> 
+            </RadioButton.Group>
         </View>
     )
 }
-const Email = function(){
+function Email(){
     
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState('gmail');
@@ -64,7 +73,7 @@ const Email = function(){
         </View>
     )
 }
-const School = function(){
+function School(){
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState();
     const [items, setItems] = useState([
@@ -89,6 +98,7 @@ const School = function(){
                         setItems={setItems}
                         listMode="SCROLLVIEW"
                         placeholder="학교 선택"
+                        translation={{NOTHING_TO_SHOW:"결과 없음"}}
                         searchable={true}
                         searchTextInputStyle={globalStyles.basic}
                         searchTextInputProps={globalStyles.dropDownSearch}
@@ -105,11 +115,8 @@ const School = function(){
         </View>
     )
 }
-const Additional = function(){
-    
-    const [open, setOpen] = useState(false);
-    const [value, setValue] = useState();
-    const [items, setItems] = useState([
+function Additional(){
+    const ITEMS = [
         {label: '컴퓨터공학과', value: 'pc'},
         {label: '전자공학과', value: 'pikachu'},
         {label: '건축공학과', value: 'minecraft'},
@@ -117,7 +124,11 @@ const Additional = function(){
         {label: '경영학과', value: 'ceo'},
         {label: '김장학과', value: 'kimchi'},
         {label: '오징어심리학과', value: 'squid'},
-    ]);
+    ]
+    
+    const [open, setOpen] = useState(false);
+    const [value, setValue] = useState();
+    const [items, setItems] = useState(ITEMS);
 
     return (
         <View>
@@ -143,6 +154,7 @@ const Additional = function(){
                         searchTextInputStyle={globalStyles.basic}
                         searchTextInputProps={globalStyles.dropDownSearch}
                         searchPlaceholder="전공 검색"
+                        translation={{NOTHING_TO_SHOW:"결과 없음"}}
                         textStyle={globalStyles.basic}
                         style={[globalStyles.dropDownPicker, {width:vw*0.425}]}
                         colors={Colors.grey}
@@ -155,7 +167,7 @@ const Additional = function(){
     )
 }
 
-const InsertPersonalData = () => {
+function InsertPersonalData(){
     return (
         <ScrollView contentInsetAdjustmentBehavior="automatic">
 

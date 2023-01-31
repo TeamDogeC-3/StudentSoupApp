@@ -62,7 +62,7 @@ export const globalStyles = StyleSheet.create({
         borderColor: Colors.light_grey,
         borderWidth: 1,
         borderRadius: 2.5,
-        paddingLeft: vw/40,
+        paddingHorizontal: vw/40,
         backgroundColor: Colors.white
     },
     dropDownSearch: {
