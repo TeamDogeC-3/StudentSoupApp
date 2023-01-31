@@ -5,31 +5,23 @@ import {
   useColorScheme,
 } from 'react-native';
 
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
+import Colors from './src/styles/colors';
 
 import AgreeTermsOfUse from './src/signUp/AgreeTermsOfUse';
 import InsertIDPW from './src/signUp/InsertIDPW';
 import InsertPersonalData from './src/signUp/InsertPersonalData';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-    // backgroundColor: 'red',
-  };
 
   return(
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={{backgroundColor:Colors.white}}>
       <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+        barStyle={'light-content'}
+        backgroundColor={Colors.orange}
       />
-      <AgreeTermsOfUse></AgreeTermsOfUse>
+      {/* <AgreeTermsOfUse></AgreeTermsOfUse> */}
       {/* <InsertIDPW></InsertIDPW> */}
-      {/* <InsertPersonalData></InsertPersonalData> */}
+      <InsertPersonalData></InsertPersonalData>
     </SafeAreaView>
   )
 };
