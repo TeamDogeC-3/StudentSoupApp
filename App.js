@@ -9,7 +9,9 @@ import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
 
-import AgreeTermsOfUse from './signup/AgreeTermsOfUse';
+import AgreeTermsOfUse from './src/signUp/AgreeTermsOfUse';
+import InsertIDPW from './src/signUp/InsertIDPW';
+import InsertPersonalData from './src/signUp/InsertPersonalData';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,6 +28,8 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <AgreeTermsOfUse></AgreeTermsOfUse>
+      {/* <InsertIDPW></InsertIDPW> */}
+      {/* <InsertPersonalData></InsertPersonalData> */}
     </SafeAreaView>
   )
 };
