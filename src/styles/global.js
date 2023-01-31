@@ -32,10 +32,16 @@ export const globalStyles = StyleSheet.create({
         fontSize: 10,
         color: Colors.grey,
     },
-    nextButton: {
+    orangeButtonText: {
         fontWeight: '500',
         fontSize: 15,
         color: Colors.white,
+        textAlign:'center',
+    },
+    whiteButtonText: {
+        fontWeight: '500',
+        fontSize: 15,
+        color: Colors.orange,
         textAlign:'center',
     },
     textInput: {
@@ -43,25 +49,27 @@ export const globalStyles = StyleSheet.create({
         fontSize: 13,
         borderColor: Colors.light_grey,
         borderWidth: 1,
-        borderRadius: 2.5,
+        borderRadius: 5,
         marginVertical: vh/200,
         backgroundColor: Colors.white,
         width: '100%',
+        height:vh/15,
         paddingHorizontal: vw/20,
     },
     dropDownPicker: {
         borderColor: Colors.light_grey,
         borderWidth: 1,
-        borderRadius: 2.5,
+        borderRadius: 5,
         paddingLeft: vw/20,
         paddingRight: vw/40,
         marginVertical: vh/200,
+        height:vh/15,
         backgroundColor: Colors.white
     },
     dropDownContainer: {
         borderColor: Colors.light_grey,
         borderWidth: 1,
-        borderRadius: 2.5,
+        borderRadius: 5,
         paddingHorizontal: vw/40,
         backgroundColor: Colors.white
     },

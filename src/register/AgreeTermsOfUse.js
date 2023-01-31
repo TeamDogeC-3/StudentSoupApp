@@ -8,7 +8,7 @@ import CheckBox from '@react-native-community/checkbox';
 import {registerStyles} from '../styles/register.js'
 import {globalStyles} from '../styles/global.js'
 import {Colors} from '../styles/colors.js';
-import { OrangeButton } from '../common/orangeButton.js';
+import { OrangeButton } from '../common/buttons.js';
 import { Level } from './registerLevel.js';
 import { Title } from './title.js';
 import { Subtitle } from './subtitle.js';
